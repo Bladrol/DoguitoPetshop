@@ -1,0 +1,13 @@
+REGEX PARA CONTRASE;A
+=====================
+
+^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?!.*[!@#$%^&*_=+-]).{6,12}$
+
+1.- ABRE Y CIERRA ASI ^-------$ , Asi le indicamos que evalue todo loq ue esta dentro de esta dentro de esta expresion
+2.- Entre () tenmos todas las reglas que queremos q se apliquen al texto del password
+3.-?=.    ===>vamos a aceptar cualquier caracter menos saltos de linea o enters.
+4.- *[a-z] deber aparecer por lo menos una vez estos caracteres desde  a 'a' z minuscula, los demas son iguales sino que van a aceptar que 
+apareczan mayusculas, numeros (0 al 9) 
+
+5.-?!.*[!@#$%^&*_=+-]  no vamos a acpetar ninguno de estos caracteres
+6.- {6,12} min y max que va a tener el password
